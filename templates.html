@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PocketSmith Status Templates</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+  </head>
+  <body>
+
+    <div id="board_container">
+
+      <h1>PocketSmith Status Templates</h1>
+
+
+<!--
+      jrkw note: this is for editing the content of the index.html page
+      - where we have [status] in the below, replace with "warning" or "critical" into the relevant place in index.html
+      - where [service_name], enter the name of the service, leaving the anchor # at the start. e.g. #yodlee, #app, #email, #mobile etc
+      - where we say "Things are broken", put a 5-word summary (e.g. intermittent issues being experienced)
+-->
+
+
+      <div class="status_box">
+        <div class="traffic_light [status]"></div>
+        <div class="application_name">
+          <h2>Service name</h2>
+          <h3><a href="https://my.pocketsmith.com" target="blank">https://my.pocketsmith.com</a></h3>
+          <p>
+            Things are broken.
+            <a href="#[service_name]">Read more.</a>
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="clear:both"></div>
+
+    <div id="additional_message_container">
+
+
+<!--
+      jrkw note:
+      - where [service_name] is, change to the name of the service entered in the first "Read more" link
+      - replace [status] with "warning" or "critical"
+      - edit the date in the em tag to reflect today's date, including the time
+      - change the message in the p tag to reflect what is happening
+-->
+
+
+
+      <div class="additional_message_box" id="[service_name]">
+        <p>
+          <strong class="[status]">Service name</strong>
+          <em>Friday 2nd May 2014, 4pm NZST</em>
+        </p>
+        <p>
+          [information about the error goes here, with details]
+        </p>
+      </div>
+
+    </div>
+
+  </body>
+</html>
+
+
