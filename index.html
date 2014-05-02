@@ -1,109 +1,112 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>PocketSmith Status Board</title>
-	</head>
-	<body>
+  <head>
+    <title>PocketSmith Status Page (testing, not real data)</title>
+  </head>
+  <body>
 
-		<div id="board_container">
+    <div id="board_container">
 
-			<h1>PocketSmith Status Page</h1>
+      <h1>
+        PocketSmith Status Page<br/>
+        <small>(test only, not real data)</small>
+      </h1>
 
-			<div class="status_box">
-				<div class="traffic_light"></div>
-				<div class="application_name">
-					<h2>PocketSmith app</h2>
-					<h3><a href="https://my.pocketsmith.com" target="blank">https://my.pocketsmith.com</a></h3>
-					<p>All systems are operational.</p>
-				</div>
-			</div>
+      <div class="status_box">
+        <div class="traffic_light"></div>
+        <div class="application_name">
+          <h2>PocketSmith app</h2>
+          <h3><a href="https://my.pocketsmith.com" target="blank">https://my.pocketsmith.com</a></h3>
+          <p>All systems are operational.</p>
+        </div>
+      </div>
 
-			<div class="status_box">
-				<div class="traffic_light warning"></div>
-				<div class="application_name">
-					<h2>Bank feed service</h2>
-					<h3><a href="http://psmth.to/y" target="blank">Yodlee</a></h3>
-					<p>Yodlee are experiencing temporary issues. <a href="#yodlee">Read more</a>.</p>
-				</div>
-			</div>
+      <div class="status_box">
+        <div class="traffic_light warning"></div>
+        <div class="application_name">
+          <h2>Bank feed service</h2>
+          <h3><a href="http://psmth.to/y" target="blank">Yodlee</a></h3>
+          <p>Yodlee are experiencing temporary issues. <a href="#yodlee">Read more</a>.</p>
+        </div>
+      </div>
 
-			<div class="status_box">
-				<div class="traffic_light critical"></div>
-				<div class="application_name">
-					<h2>Mobile app</h2>
-					<h3><a href="https://mobile.pocketsmith.com" target="blank">https://mobile.pocketsmith.com</a></h3>
-					<p>Currently down, we're sorry for the inconvenience. <a href="#mobile">Read more</a>.</p>
-				</div>
-			</div>
+      <div class="status_box">
+        <div class="traffic_light critical"></div>
+        <div class="application_name">
+          <h2>Mobile app</h2>
+          <h3><a href="https://mobile.pocketsmith.com" target="blank">https://mobile.pocketsmith.com</a></h3>
+          <p>Currently down, we're sorry for the inconvenience. <a href="#mobile">Read more</a>.</p>
+        </div>
+      </div>
 
-			<div class="status_box">
-				<div class="traffic_light"></div>
-				<div class="application_name">
-					<h2>Application emails</h2>
-					<h3><a href="http://psmth.to/OP" target="blank">Account update emails</a></h3>
-					<p>All systems are operational.</p>
-				</div>
-			</div>
+      <div class="status_box">
+        <div class="traffic_light"></div>
+        <div class="application_name">
+          <h2>Application emails</h2>
+          <h3><a href="http://psmth.to/OP" target="blank">Account update emails</a></h3>
+          <p>All systems are operational.</p>
+        </div>
+      </div>
 
-		</div>
+    </div>
 
-		<div style="clear:both"></div>
+    <div style="clear:both"></div>
 
-		<div id="additional_message_container">
+    <div id="additional_message_container">
 
-			<div class="additional_message_box" id="yodlee">
-				<p>
-					<strong class="warning">Bank feed service</strong>
-					<em>Friday 2nd May 2014</em>
-				</p>
-				<p>
-					Yodlee are currently experiencing intermittent issues with their queueing system. This is causing refreshes to not proceed as expected. We're in contact with them now about the problem, and will update with more information here.
-				</p>
-			</div>
+      <div class="additional_message_box" id="yodlee">
+        <p>
+          <strong class="warning">Bank feed service</strong>
+          <em>Friday 2nd May 2014</em>
+        </p>
+        <p>
+          Yodlee are currently experiencing intermittent issues with their queueing system. This is causing refreshes to not proceed as expected. We're in contact with them now about the problem, and will update with more information here.
+        </p>
+      </div>
 
-			<div class="additional_message_box" id="mobile">
-				<p>
-					<strong class="critical">PocketSmith Mobile</strong>
-					<em>Friday 2nd May 2014</em><br/>
-				</p>
-				<p>
-					The mobile application is down for scheduled maintenance for the next upgraded releases. <a href="#">See more information here</a>.
-				</p>
-			</div>
+      <div class="additional_message_box" id="mobile">
+        <p>
+          <strong class="critical">PocketSmith Mobile</strong>
+          <em>Friday 2nd May 2014</em><br/>
+        </p>
+        <p>
+          The mobile application is down for scheduled maintenance for the next upgraded releases. <a href="#">See more information here</a>.
+        </p>
+      </div>
 
-		</div>
+    </div>
 
-		<style type="text/css" media="screen">
-			body { font-family:sans-serif; }
-			strong { padding:3px 5px; }
-			.clear { clear:both; }
-			#board_container {
-				width: 60%;
-				margin: 0 20%;
-			}
-			.status_box {
-				clear:both;
-			}
-			.traffic_light {
-				width:120px; height:120px;
-				float:left;
-				background-color:#60B000;
-				margin:20px 20px 20px 0;
-			}
-			.application_name {
-				position:absolute;
-				margin-left:140px;
-			}
-			.warning { background-color:orange; color:white; }
-			.critical { background-color:#C20000; color:white; }
-			#additional_message_container {
-				width: 60%;
-				margin: 60px 20%;
-			}
+    <style type="text/css" media="screen">
+      body { font-family:sans-serif; }
+      strong { padding:3px 5px; }
+      .clear { clear:both; }
+      #board_container {
+        width: 60%;
+        margin: 0 20%;
+      }
+      .status_box {
+        clear:both;
+      }
+      .traffic_light {
+        width:120px; height:120px;
+        float:left;
+        background-color:#60B000;
+        margin:20px 20px 20px 0;
+      }
+      .application_name {
+        position:absolute;
+        margin-left:140px;
+      }
+      .warning { background-color:orange; color:white; }
+      .critical { background-color:#C20000; color:white; }
+      #additional_message_container {
+        width: 60%;
+        margin: 60px 20%;
+      }
 
-			.additional_message_box { margin-bottom:30px; }
+      .additional_message_box { margin-bottom:30px; }
 
-		</style>
+    </style>
 
-	</body>
+  </body>
 </html>
