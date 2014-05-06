@@ -1,7 +1,7 @@
 body { font-family:sans-serif; }
 h1, h2, h3 { font-weight:normal; }
 strong { padding:3px 5px; }
-em { margin-left:12px; }
+em { color:#777; }
 .clear { clear:both; }
 
 #board_container { width: 500px; margin: 0 auto; }
@@ -12,6 +12,7 @@ em { margin-left:12px; }
 #additional_message_container { width: 500px; margin: 60px auto; }
 .additional_message_box { margin-bottom:30px; }
 
+.ok { background-color:#60B000; color:white; }
 .warning { background-color:orange; color:white; }
 .critical { background-color:#C20000; color:white; }
 
